@@ -1,0 +1,461 @@
+html , body{
+	margin: 0;
+	box-sizing: border-box;
+}
+header{
+	
+
+	width: 100%;
+	height: auto;
+
+}
+
+.logo{
+	display: block;
+}
+.logo a{
+	font-size: 1.5rem;
+	font-family: 'Roboto Mono', monospace;
+	color: #4A4A4A;
+	margin-left: 1.875rem;
+	text-decoration: none;
+}
+.menu{
+	margin-top: 0.5rem;
+}
+nav {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	margin: 0 auto;
+	justify-items: center;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	
+	
+	
+
+}
+nav ul{
+	margin: auto;
+	margin-right: 1.875rem;
+	
+}
+.li-item {
+	display: inline-block;
+	list-style: none;
+	justify-items: space-between;
+}
+.li-item a {
+	text-decoration: none;
+	font-size:  1rem;
+	font-family: 'Roboto', sans-serif;
+	color: #4A4A4A; 
+	line-height: 1.6;
+	padding-right: 3rem;
+	
+
+}
+.banner {
+	background-image: url("./img/banner.jpg");
+	background-size: cover;
+	width: 100%;
+	height: 40rem;
+	
+	position: relative;
+
+}
+.icon{
+	width: 1.2rem;
+	height: 1.2rem;
+	margin-left: 0.5rem;
+}
+.banner-caption{
+	height: 20rem;
+	width: 35rem;
+	background-color: #9DC20A;
+	border-radius: 4px;
+	border: 1px solid #979797;
+	top: 170px;
+	left: 100px;
+	position: absolute;
+	bottom: 170px;
+}
+.caption{
+	color: white;
+}
+.caption h4{
+	margin-top: 0.8rem;
+	margin-bottom: 0.8rem;
+	font-size: 3rem;
+	text-align: center;
+	font-family: 'Rubik', sans-serif;
+	font-style: normal;
+	line-height: 1.4;
+	text-transform: uppercase;
+}
+.caption p{
+	margin-top: 1rem;
+	margin-bottom: 0;
+	text-align: center;
+	font-style: italic;
+	font-size: 2.5rem;
+}
+.desc{
+
+	color: white;
+	line-height: 1.4;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	font-size: 1.25rem;
+}
+.btn{
+	width: 400px;
+	height: 60px;
+	background-color: #4A4A4A;
+	color: white;
+	font-size: 1.25rem;
+	border: none;
+	border-radius: 4px;
+	line-height: 1.4;
+	margin-bottom: 56px;
+}
+.photo  {
+	display: grid;
+	justify-content: space-between;
+	background-color: lightgrey;
+	grid-template-columns: 1fr 1fr;
+	padding: 4rem 5%;
+	
+}
+.photo-items{
+	height: auto;
+	
+	padding: 2rem;
+	background-color: white;
+	margin: 0px 1.25rem;
+}
+.image {
+
+	width: 90%;
+	height: 65%;
+	margin: 0 auto;
+}
+.image img {
+	width: 90%;
+	height: 65%;
+	margin: 0 auto;
+	
+}
+.center{
+	text-align: center;
+
+}
+.image-caption p{
+	color: #4A4A4A;
+	font-size: 1rem;
+	font-family: 'Roboto', sans-serif;
+	font-weight: lighter;
+	line-height: 1.2;
+}
+.image-caption h4{
+	color: #4A4A4A;
+	font-size: 2rem;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	line-height: 1.2;
+}
+.gallery{
+	height: auto;
+	width: 100%;
+	background-color: #4A4A4A;
+}
+.gallery-caption h4{
+	text-align: center;
+	font-size: 2.5rem;
+	opacity: 100%;
+	color: white;
+	font-weight: bold;
+	font-family: 'Roboto', sans-serif;
+	margin: 0 auto;
+	padding-top: 4rem;
+
+}
+.gallery-caption p{
+	text-align: center;
+	font-size: 1rem;
+	font-weight: normal;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+}
+.gallery-grid{
+	padding-top: 4rem;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	padding-bottom: 4rem;
+}
+.gallery-image img{
+	width: 100%;
+	height: auto;
+}
+.blockquote{
+	width: 100%;
+	color: #4A4A4A;
+	line-height: 1.1;
+	font-size: 2rem;
+	text-align: center;
+	
+	font-style: italic;
+	padding-top: 80px;
+	padding-bottom: 80px;
+
+}
+.blockquote img{
+	padding-left: 2rem;
+}
+footer{
+	display: flex;
+	width: 100%;
+	height: 4rem;
+	background-color: #9B9B9B;
+	color: white;
+	justify-content: space-between;
+	align-items: center;
+}
+.rights{
+	padding-left: 2rem;
+
+}
+.design{
+	padding-right: 2rem;
+}
+.mobile{
+	display: none;
+}
+.banner-caption-mobile{
+	display: none;
+}
+
+
+@media only screen and (max-width: 1060px) {
+
+	nav {
+		top: 0;
+	}
+	
+	
+	.desc , .btn{
+		display: none;
+	}
+	.caption p{
+		font-size: 1.5rem;
+		
+		
+	}
+	.caption h4{
+		font-size: 2.5rem;
+		
+
+	}
+	.banner{
+		
+		background-position: center;
+		background-size: cover;
+		width: 100%;
+		height: 30rem;
+	}
+	.banner-caption{
+		position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+		background: transparent;
+		border: none;
+		width: auto;
+		height: auto;
+	}
+	.image-caption h4{
+		font-size: 1.5rem;
+		line-height: 1;
+	}
+	.image-caption p{
+		font-size: 1rem;
+		line-height: 1;
+	}
+
+	.gallery-caption h4{
+		padding-top: 2rem;
+		font-size: 2rem;
+	}
+	.gallery-caption p{
+		font-size: .8rem;
+
+	}
+	.gallery-grid{
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+	}
+
+	
+}
+
+
+
+
+@media only screen and (max-width: 760px){
+	nav{
+		top: 0;
+	}
+	nav ul{
+		padding: 0;
+		margin: 0;
+	}
+
+
+
+	.landing{
+		display: none;
+	}
+	.mobile{
+		display:  block;
+		width:  100%;
+		height: 3rem;
+	}
+	.mobile ul{
+		padding-top: .8rem;
+		display: flex;
+		width: 100%;
+		justify-content: space-around;
+		align-items: center;
+	}
+	.mobile ul li{
+		padding: 0;
+		list-style: none;
+	}
+	.mobile ul li a{
+		text-decoration: none;
+		
+	}
+	.button {
+		color: white;
+		background-color: #9DC20B;
+		padding: .1875rem .5rem;
+		border-radius: .25rem;
+		line-height: 1.6;
+	}
+	.banner{
+		
+		background-position: center;
+		background-size: cover;
+		width: 100%;
+		height: 20rem;
+	}
+	.desc , .btn{
+		display: none;
+	}
+	.banner-caption{
+		position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+		background: transparent;
+		border: none;
+		width: auto;
+		height: auto;
+	}
+	.caption p{
+		font-size: 1.5rem;
+		
+		
+	}
+	.caption h4{
+		font-size: 2rem;	
+
+	}
+	
+	.photo {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+		gap: 1rem;
+		padding: 5%;
+	}
+	.photo-items{
+		padding: 1rem;
+		height: auto;
+		margin: 0;
+	}
+	.gallery-caption h4{
+		padding-top: 1.5rem;
+		font-size: 2rem;
+	}
+	.gallery-caption p{
+		display: none;
+
+	}
+	.blockquote{
+		font-size: 1.5rem;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+	}
+
+	
+	
+}
+
+@media only screen and (max-width: 460px){
+	.caption p{
+		font-size: 0.5rem;
+		
+		
+	}
+	.caption h4{
+		font-size: 1rem;
+		
+
+	}
+	.banner{
+		background-position: center;
+		background-size: cover;
+		width: 100%;
+		height: 15rem;
+	}
+	nav ul{
+		padding: 0;
+		margin: 0;
+	}
+	.banner-caption{
+		position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: transparent;
+		border: none;
+		width: auto;
+		height: auto;
+	}
+	.gallery-caption h4{
+		padding-top: 1.5rem;
+		font-size: 1rem;
+	}
+	.image-caption h4{
+		font-size: 1rem;
+		
+	}
+	.image-caption p{
+		font-size: .5rem;
+		
+	}
+	.blockquote{
+		font-size: 1rem;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+	}
+	footer{
+		height: 2rem;
+		font-size: 0.5rem;
+	}
+
+
+}
